@@ -1,0 +1,32 @@
+workflows:
+  build-ios-app:
+    name: Build iOS App (.ipa)
+    environment:
+      xcode: latest
+      vars:
+        XCODE_PROJECT: "ModMenuBS"
+        XCODE_SCHEME: "ModMenuBS"
+      ios_signing:
+        distribution_type: ad_hoc
+    scripts:
+      - name: Install dependencies
+        script: |
+          echo "No dependencies to install (pure SwiftUI scaffold)"
+      - name: Build and export .ipa
+        script: |
+          xcodebuild -project "$XCODE_PROJECT.xcodeproj"             -scheme "$XCODE_SCHEME"             -configuration Release             -archivePath build/ModMenuBS.xcarchive archive
+
+          xcodebuild -exportArchive             -archivePath build/ModMenuBS.xcarchive             -exportOptionsPlist exportOptions.plist             -exportPath build/ipa
+
+      - name: Move final IPA
+        script: |
+          mkdir -p $CM_EXPORT_DIR
+          cp -r build/ipa/*.ipa $CM_EXPORT_DIR/
+
+    artifacts:
+      - build/ipa/*.ipa
+
+    publishing:
+      email:
+        recipients:
+          - your-email@example.com
