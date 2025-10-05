@@ -1,0 +1,170 @@
+
+// !$*UTF8*$!
+{
+  archiveVersion = 1;
+  classes = {
+  };
+  objectVersion = 55;
+  objects = {
+
+/* Begin PBXProject section */
+    1D6058900D05DD3D006BFB54 /* Project object */ = {
+      isa = PBXProject;
+      attributes = {
+        LastUpgradeCheck = 1400;
+      };
+      buildConfigurationList = 1D6058940D05DD3D006BFB54 /* Build configuration list for PBXProject */;
+      compatibilityVersion = "Xcode 14.0";
+      developmentRegion = en;
+      hasScannedForEncodings = 0;
+      knownRegions = (
+        en,
+      );
+      mainGroup = 1D6058910D05DD3D006BFB54;
+      productRefGroup = 1D6058920D05DD3D006BFB54 /* Products */;
+      projectDirPath = "";
+      projectRoot = "";
+      targets = (
+        1D6058930D05DD3D006BFB54 /* ModMenuBS */,
+      );
+    };
+/* End PBXProject section */
+
+/* Begin PBXGroup section */
+    1D6058910D05DD3D006BFB54 = {
+      isa = PBXGroup;
+      children = (
+        1D6058A10D05DD3D006BFB54 /* ModMenuBS */,
+        1D6058920D05DD3D006BFB54 /* Products */,
+      );
+      sourceTree = "<group>";
+      name = "ModMenuBS";
+    };
+    1D6058A10D05DD3D006BFB54 = {
+      isa = PBXGroup;
+      children = (
+        1D6058A30D05DD3D006BFB54 /* ModMenuBSApp.swift */,
+        1D6058A40D05DD3D006BFB54 /* ContentView.swift */,
+        1D6058A50D05DD3D006BFB54 /* AssetsView.swift */,
+        1D6058A60D05DD3D006BFB54 /* AssetViewModel.swift */,
+        1D6058A70D05DD3D006BFB54 /* Resources */,
+      );
+      path = "ModMenuBS";
+      sourceTree = "<group>";
+    };
+    1D6058920D05DD3D006BFB54 = {
+      isa = PBXGroup;
+      children = (
+      );
+      name = Products;
+      sourceTree = "<group>";
+    };
+/* End PBXGroup section */
+
+/* Begin PBXSourcesBuildPhase section */
+    1D60589E0D05DD3D006BFB54 = {
+      isa = PBXSourcesBuildPhase;
+      buildActionMask = 2147483647;
+      files = (
+        1D6058B10D05DD3D006BFB54 /* ModMenuBSApp.swift in Sources */,
+        1D6058B20D05DD3D006BFB54 /* ContentView.swift in Sources */,
+        1D6058B30D05DD3D006BFB54 /* AssetsView.swift in Sources */,
+        1D6058B40D05DD3D006BFB54 /* AssetViewModel.swift in Sources */,
+      );
+      runOnlyForDeploymentPostprocessing = 0;
+    };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXFileReference section */
+    1D6058A30D05DD3D006BFB54 = { isa = PBXFileReference; lastKnownFileType = "sourcecode.swift"; path = "ModMenuBSApp.swift"; sourceTree = "<group>"; };
+    1D6058A40D05DD3D006BFB54 = { isa = PBXFileReference; lastKnownFileType = "sourcecode.swift"; path = "ContentView.swift"; sourceTree = "<group>"; };
+    1D6058A50D05DD3D006BFB54 = { isa = PBXFileReference; lastKnownFileType = "sourcecode.swift"; path = "AssetsView.swift"; sourceTree = "<group>"; };
+    1D6058A60D05DD3D006BFB54 = { isa = PBXFileReference; lastKnownFileType = "sourcecode.swift"; path = "AssetViewModel.swift"; sourceTree = "<group>"; }
+/* End PBXFileReference section */
+
+/* Begin PBXNativeTarget section */
+    1D6058930D05DD3D006BFB54 = {
+      isa = PBXNativeTarget;
+      buildConfigurationList = 1D60588F0D05DD3D006BFB54 /* Build configuration list for PBXNativeTarget "ModMenuBS" */;
+      buildPhases = (
+        1D60589E0D05DD3D006BFB54,
+      );
+      buildRules = (
+      );
+      dependencies = (
+      );
+      name = "ModMenuBS";
+      productName = "ModMenuBS";
+      productReference = 1D6058B80D05DD3D006BFB54 /* ModMenuBS.app */;
+      productType = "com.apple.product-type.application";
+    };
+/* End PBXNativeTarget section */
+
+/* Begin PBXBuildFile section */
+    1D6058B10D05DD3D006BFB54 = { isa = PBXBuildFile; fileRef = 1D6058A30D05DD3D006BFB54; };
+    1D6058B20D05DD3D006BFB54 = { isa = PBXBuildFile; fileRef = 1D6058A40D05DD3D006BFB54; };
+    1D6058B30D05DD3D006BFB54 = { isa = PBXBuildFile; fileRef = 1D6058A50D05DD3D006BFB54; };
+    1D6058B40D05DD3D006BFB54 = { isa = PBXBuildFile; fileRef = 1D6058A60D05DD3D006BFB54; };
+/* End PBXBuildFile section */
+
+/* Begin PBXGroup section for Resources */
+    1D6058A70D05DD3D006BFB54 = {
+      isa = PBXGroup;
+      children = (
+      );
+      path = "Resources";
+      sourceTree = "<group>";
+    };
+/* End PBXGroup section for Resources */
+
+/* Begin PBXFileReference for Product */
+    1D6058B80D05DD3D006BFB54 = { isa = PBXFileReference; lastKnownFileType = "wrapper.application"; path = "ModMenuBS.app"; sourceTree = "BUILT_PRODUCTS_DIR"; };
+/* End PBXFileReference for Product */
+
+/* Begin XCBuildConfiguration section */
+    1D6058900D05DD3D006BFB54 = {
+      isa = XCBuildConfiguration;
+      buildSettings = {
+        PRODUCT_NAME = "ModMenuBS";
+        INFOPLIST_FILE = "Info.plist";
+        IPHONEOS_DEPLOYMENT_TARGET = "18.0";
+        SWIFT_VERSION = "5.0";
+      };
+      name = Release;
+    };
+    1D6058900D05DD3D006BFB54 /* Debug */ = {
+      isa = XCBuildConfiguration;
+      buildSettings = {
+        PRODUCT_NAME = "ModMenuBS";
+        INFOPLIST_FILE = "Info.plist";
+        IPHONEOS_DEPLOYMENT_TARGET = "18.0";
+        SWIFT_VERSION = "5.0";
+      };
+      name = Debug;
+    };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+    1D6058940D05DD3D006BFB54 = {
+      isa = XCConfigurationList;
+      buildConfigurations = (
+        1D6058900D05DD3D006BFB54 /* Release */,
+        1D6058900D05DD3D006BFB54 /* Debug */,
+      );
+      defaultConfigurationIsVisible = 0;
+      defaultConfigurationName = Release;
+    };
+    1D60588F0D05DD3D006BFB54 = {
+      isa = XCConfigurationList;
+      buildConfigurations = (
+        1D6058900D05DD3D006BFB54 /* Debug */,
+        1D6058900D05DD3D006BFB54 /* Release */,
+      );
+      defaultConfigurationIsVisible = 0;
+      defaultConfigurationName = Debug;
+    };
+/* End XCConfigurationList section */
+
+  };
+  rootObject = 1D6058900D05DD3D006BFB54 /* Project object */;
+}
